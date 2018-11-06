@@ -4,7 +4,7 @@ import MemberRow from './MemberRow.js'
 class MemberTable extends React.Component {
   render() {
     const rows = [];
-    this.props.members.forEach((member) => {
+    this.props.members != null && this.props.members.forEach((member) => {
       rows.push(
         <MemberRow
           member={member}
