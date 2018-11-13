@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from "axios";
 import MemberTable from './MemberTable.js'
-import Button from '@material-ui/core/Button';
 
 class Member extends React.Component {
     constructor() {
@@ -27,9 +26,6 @@ class Member extends React.Component {
         return (
             <div className="Member">
                 <MemberTable members={this.state.members}/>
-                <Button variant="contained" color="primary">
-                    Hello World
-                </Button>
             </div>
         );
     }
