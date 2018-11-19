@@ -32,7 +32,7 @@ const styles = theme => ({
 });
 
 
-function MemberTable (props) {
+function MemberTable(props) {
    const {classes} = props;
    const rows = [];
    props.members != null && props.members.forEach((member) => {
@@ -63,7 +63,7 @@ function MemberTable (props) {
 
 MemberTable.propTypes = {
    classes: PropTypes.object.isRequired,
-   members: PropTypes.object.isRequired,
+   members: PropTypes.array.isRequired,
 };
 
 export default withStyles(styles)(MemberTable);

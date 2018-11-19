@@ -25,7 +25,9 @@ class Member extends React.Component {
     render() {
         return (
             <div className="Member">
-                <MemberTable members={this.state.members}/>
+               { (this.state.members !== null)
+                ? <MemberTable members={this.state.members} />
+                : null }
             </div>
         );
     }

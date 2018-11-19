@@ -23,7 +23,6 @@ class MemberRow extends React.Component {
 
 MemberRow.propTypes = {
     member: PropTypes.object.isRequired,
-    key: PropTypes.string.isRequired,
 };
 
 export default MemberRow;
